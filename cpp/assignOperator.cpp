@@ -5,12 +5,14 @@ class complex
 {
 	int r,i;
 	public:
+	//istream overloading
 	friend istream& operator>>(istream &in, complex &ob)
 	{
 	in>>ob.r;
 	in>>ob.i;
 	return in;	
 	}
+	//ostream overloading
 	friend ostream& operator<<(ostream &out, complex &ob)
 	{
 	out<<ob.r<<endl;
